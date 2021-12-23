@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.example.strangeLetter.mapper.LetterMapper">
+    <select id="getLetterList" resultType="com.example.strangeLetter.domain.LetterDomain">
+        select id, creat_time, content from message_main
+    </select>
+<!--    <insert id="setLetterList" parameterType="com.example.strangeLetter.domain.LetterDomain">-->
+<!--        insert into message_main (id, content,create_time) value (#{id},#{content},#{create_time})-->
+<!--    </insert>-->
+</mapper>
